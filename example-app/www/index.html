@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+        </title>
+        <link rel="stylesheet" href="style/jquery.mobile-1.1.1.min.css"
+        />
+        <link rel="stylesheet" href="style/my.css" />
+        
+        <script src="js/jquery-1.7.2.min.js">
+        </script>
+        <script src="js/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script type="text/javascript" src="js/cordova-2.1.0.js"></script>
+        <script src="js/my.js">
+        </script>
+    </head>
+    
+    <body>
+        <!-- Index -->
+        <div data-role="page" id="page1">
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="text_hostname">
+                            Hostname
+                        </label>
+                        <input name="" id="text_hostname" placeholder="" value=""
+                        type="text">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="text_port">
+                            Port
+                        </label>
+                        <input name="" id="text_port" placeholder="" value="10081" type="text">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="text_api_key_name">
+                            API Key Name
+                        </label>
+                        <input name="" id="text_api_key_name" placeholder="" value="admin" type="text">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="text_api_key">
+                            API Key
+                        </label>
+                        <input name="" id="text_api_key" placeholder="" value=""
+                        type="text">
+                    </fieldset>
+                </div>
+                <a id="button1" data-role="button" href="#page2">
+                    Events Breakdown
+                </a>
+                <a id="button3" data-role="button" href="#page4">
+                    Requests per Second
+                </a>
+                <a id="button11" data-role="button" href="#page6">
+                    Memcache Stats
+                </a>
+                <a id="button8" data-role="button" href="#page1">
+                    Restart PHP
+                </a>
+            </div>
+        </div>
+        <!-- events-breakdown -->
+        <div data-role="page" id="page2">
+            <div id="pageheader1" data-theme="a" data-role="header">
+                <h3 id="heading1">
+                    Events Breakdown
+                </h3>
+                <a id="button2" data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="left"
+                class="ui-btn-left">
+                    Back
+                </a>
+            </div>
+            <div data-role="content">
+            </div>
+        </div>
+        <!-- requests-per-second -->
+        <div data-role="page" id="page4">
+            <div id="pageheader1" data-theme="a" data-role="header">
+                <h3 id="heading1">
+                    Requests per Second
+                </h3>
+                <a id="button2" data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="left"
+                class="ui-btn-left">
+                    Back
+                </a>
+            </div>
+            <div data-role="content">
+            </div>
+        </div>
+        <!-- memcache-stats -->
+        <div data-role="page" id="page6">
+            <div id="pageheader1" data-theme="a" data-role="header">
+                <h3 id="heading1">
+                    Memcache Stats
+                </h3>
+                <a id="button2" data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="left"
+                class="ui-btn-left">
+                    Back
+                </a>
+            </div>
+            <div data-role="content">
+                <ul id="listview2" data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Memcache Items
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- memcache-stats-details -->
+        <div data-role="page" id="page7">
+            <div id="pageheader1" data-theme="a" data-role="header">
+                <h3 id="heading1">
+                    Memcache Details
+                </h3>
+                <a id="button2" data-role="button" href="#page6" data-icon="arrow-l" data-iconpos="left"
+                class="ui-btn-left">
+                    Back
+                </a>
+            </div>
+            <div data-role="content">
+                <div id="unique_id">
+                    <p>
+                        <b>
+                            <br>
+                        </b>
+                    </p>
+                </div>
+                <div id="microtime">
+                    <p>
+                        <b>
+                            <br>
+                        </b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
