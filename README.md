@@ -41,6 +41,7 @@ Restart PHP:
 >    null, 
 >    function () {alert('PHP restarted'); return true;}
 > );
+
 Fetch Requests per second:
 > ZSWebApiConnector.request(
 >    'statisticsGetSeries', 
@@ -48,6 +49,7 @@ Fetch Requests per second:
 >    'type=30&appId=0&from=1379309180&server=0&to=1379395580', 
 >    doBuildRequestsPerSecond
 > );
+
 # Example Project #
 In dir example-app you can find the code for developing a sample app with Phonegap which is using zend-web-api.js
 This code was developed for the session 'App in 30 minutes' that was delivered at ZendCon 2013. Please note that the code has been developed and tested with Zend Studio 10.1. In this example also the library Highcharts (http://www.highcharts.com/) is used.
